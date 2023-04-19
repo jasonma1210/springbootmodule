@@ -1,0 +1,12 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: springboot-mail
+  mail:
+    host: smtp.163.com
+    username: jasonma12101982
+    password: VEASEJVLVHIVSDMZ
+
+my:
+  mail: jasonma12101982@163.com

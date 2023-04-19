@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.TbShoesMapper">
+  <resultMap id="BaseResultMap" type="com.example.dto.TbShoes">
+    <!--@mbg.generated-->
+    <!--@Table tb_shoes-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="brandName" jdbcType="VARCHAR" property="brandname" />
+    <result column="productId" jdbcType="VARCHAR" property="productid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="categoryId" jdbcType="VARCHAR" property="categoryid" />
+    <result column="spuId" jdbcType="VARCHAR" property="spuid" />
+    <result column="spuMinSalePrice" jdbcType="VARCHAR" property="spuminsaleprice" />
+    <result column="soldNum" jdbcType="INTEGER" property="soldnum" />
+    <result column="images" jdbcType="VARCHAR" property="images" />
+    <result column="brandLogoUrl" jdbcType="VARCHAR" property="brandlogourl" />
+    <result column="articleNumber" jdbcType="VARCHAR" property="articlenumber" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, brandName, productId, title, price, categoryId, spuId, spuMinSalePrice, soldNum, 
+    images, brandLogoUrl, articleNumber
+  </sql>
+  <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from tb_shoes
+  </select>
+
+  <select id="queryTbShoes" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_shoes
+    where id = #{id,jdbcType=INTEGER}
+    </select>
+</mapper>

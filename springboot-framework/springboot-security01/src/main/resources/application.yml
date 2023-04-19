@@ -1,0 +1,23 @@
+#user:
+#    username: jason
+#    pass: 123456
+#    role: admin
+server:
+  port: 8110
+## 通过设置登录信息实现，但是只能定义一个，
+#spring:
+#  security:
+#    user:
+#      name: jason
+#      password: 123456
+#      roles: admin
+spring:
+  thymeleaf:
+    mode: HTML
+    encoding: utf-8
+    # 禁用缓存
+    cache: false
+##能够让当前项目加载静态资源，比如html css js等
+  web:
+    resources:
+      static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/templates/

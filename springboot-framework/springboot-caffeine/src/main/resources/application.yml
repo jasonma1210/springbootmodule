@@ -1,0 +1,9 @@
+server:
+  servlet:
+    context-path: /cache
+  port: 8089
+spring:
+  application:
+    name: springboot-cache
+  cache:
+    type: caffeine

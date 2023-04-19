@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.TUserMapper">
+  <resultMap id="BaseResultMap" type="com.example.dto.TUser">
+    <!--@mbg.generated-->
+    <!--@Table t_user-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pass" jdbcType="VARCHAR" property="pass" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, name, pass
+  </sql>
+
+  <select id="selectUserbyNameAndPass" resultType="com.example.dto.TUser">
+    select * from t_user where name = #{name,jdbcType=VARCHAR} and pass= #{pass,jdbcType=VARCHAR}
+  </select>
+
+  <select id="userInfo" resultType="com.example.dto.TUser">
+    select * from t_user where id = #{id,jdbcType=VARCHAR}
+  </select>
+</mapper>
