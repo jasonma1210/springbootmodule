@@ -34,7 +34,6 @@
         <module>springboot-securitydecidition</module>
         <module>springboot-securitydemo</module>
         <module>springboot-security01</module>
-        <module>springboot-es</module>
     </modules>
 
     <properties>
