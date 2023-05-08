@@ -1,0 +1,3 @@
+canal:
+  destination: example # canal的集群名字，要与安装canal时设置的名称一致
+  server: localhost:11111 # canal服务地址

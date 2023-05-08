@@ -3,7 +3,16 @@ package com.example.dto;
 
 import java.io.Serializable;
 
+
 public class TUser implements Serializable {
+    public TUser(Integer id, String name, String pass) {
+        this.id = id;
+        this.name = name;
+        this.pass = pass;
+    }
+
+    public TUser() {
+    }
 
     private Integer id;
 

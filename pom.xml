@@ -17,6 +17,7 @@
 	<description>项目模块化管理</description>
 	<modules>
 		<module>springboot-framework</module>
+        <module>kafkademo</module>
 
     </modules>
 	<properties>

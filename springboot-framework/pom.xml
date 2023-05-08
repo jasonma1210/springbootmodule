@@ -34,6 +34,11 @@
         <module>springboot-securitydecidition</module>
         <module>springboot-securitydemo</module>
         <module>springboot-security01</module>
+        <module>springboot-escanal</module>
+        <module>springboot-session04</module>
+        <module>springboot-es</module>
+        <module>springboot-kafka-productor</module>
+        <module>springboot-kafka-consumer</module>
     </modules>
 
     <properties>
