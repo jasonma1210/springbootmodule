@@ -39,6 +39,7 @@
         <module>springboot-es</module>
         <module>springboot-kafka-productor</module>
         <module>springboot-kafka-consumer</module>
+        <module>springboot-async</module>
     </modules>
 
     <properties>

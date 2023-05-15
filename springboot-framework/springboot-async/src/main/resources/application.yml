@@ -1,0 +1,5 @@
+server:
+  port: 19999
+logging:
+  level:
+    com.example: debug
